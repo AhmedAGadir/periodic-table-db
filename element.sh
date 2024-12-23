@@ -53,7 +53,7 @@ else
     # get element from symbol
     GET_ELEMENT symbol $SYMBOL
   else
-    # check if user entered an atomic number
+    # check if user entered a name
     NAME=$($PSQL "SELECT name FROM elements WHERE name = '$1';") 
     if [[ ! -z $NAME ]] 
       then
